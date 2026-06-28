@@ -25,13 +25,22 @@
 
 ## ビルド
 
-依存: [Rust](https://rustup.rs/)（`cargo`）, Xcode Command Line Tools（`swiftc`）。Homebrew なら `brew install rust`。
-
 ```sh
-# CLI と GUI アプリをまとめてビルド
-bash gui/build.sh
+# 1) 前提ツール（未導入なら）
+xcode-select --install     # swiftc / clang / git
+brew install rust          # cargo（CLI のビルド用）
+
+# 2) クローンしてビルド
+git clone https://github.com/octopusv/mini-key-mac.git
+cd mini-key-mac
+bash gui/build.sh          # CLI ビルド → .app 組み立て → 署名 を一括
 # => gui/build/mini-key.app が生成されます
+
+# 3) 起動
+open gui/build/mini-key.app
 ```
+
+Apple Silicon / Intel どちらでも、そのマシンでビルドすれば動きます。
 
 GUI を使わず CLI だけ使う場合:
 
