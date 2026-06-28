@@ -1,0 +1,18 @@
+# mini-key (3KV1 / 0x514c:8851) 設定例。
+# コピーして keypad.yaml を作るか、GUI から書き込んでください。
+#   KEY1 -> コピー (⌘C) / KEY2 -> ペースト (⌘V) / KEY3 -> 取り消し (⌘Z)
+#   ノブ: 左回し=音量ダウン / 押し込み=ミュート / 右回し=音量アップ
+#
+# 利用可能なキー名:  ./ch57x-keyboard-tool/target/release/ch57x-keyboard-tool show-keys
+model: ch57x-1
+orientation: normal
+rows: 1
+columns: 3
+knobs: 1
+layers:
+  - buttons:
+      - ["cmd-c", "cmd-v", "cmd-z"]
+    knobs:
+      - ccw: "volumedown"
+        press: "mute"
+        cw: "volumeup"

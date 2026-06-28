@@ -1,0 +1,18 @@
+# ビルド成果物
+gui/build/
+*.app
+ch57x-keyboard-tool/target/
+
+# ユーザーデータ（実行時は ~/Library/Application Support/mini-key/ に保存される）
+keypad.yaml
+profiles.json
+
+# 開発・診断用の一時ファイル
+test-keypad.yaml
+probe.yaml
+
+# メーカー配布のマニュアル（著作物のため同梱しない）
+mini-key-manual.pdf
+
+# macOS
+.DS_Store
