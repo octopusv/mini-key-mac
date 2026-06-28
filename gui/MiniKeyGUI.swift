@@ -117,6 +117,9 @@ let buttonGroups: [OptGroup] = [
         Opt("cmd-left", "行頭  ⌘←"),
         Opt("cmd-right", "行末  ⌘→"),
     ]),
+    OptGroup(title: "アプリ", opts: [
+        Opt("ctrl-alt-cmd-a", "Aqua Voice  ⌃⌥⌘A"),
+    ]),
     otherGroup,
 ]
 
